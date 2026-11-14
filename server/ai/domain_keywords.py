@@ -1,0 +1,185 @@
+"""
+Domain-specific keyword intelligence for all 7 supported verticals.
+Each domain has carefully curated keywords for accurate trend analysis.
+"""
+
+DOMAIN_KEYWORDS = {
+    "IT": [
+        "cloud computing",
+        "artificial intelligence",
+        "machine learning",
+        "cybersecurity",
+        "software development",
+        "devops",
+        "blockchain",
+        "data science",
+        "web development",
+        "mobile app development",
+        "SaaS",
+        "API development",
+        "microservices",
+        "kubernetes",
+        "AWS",
+        "Azure",
+        "digital transformation",
+        "IT consulting",
+        "software as a service",
+        "enterprise software"
+    ],
+    
+    "Healthcare": [
+        "telemedicine",
+        "healthcare technology",
+        "medical devices",
+        "electronic health records",
+        "patient care",
+        "healthcare AI",
+        "medical diagnostics",
+        "health monitoring",
+        "digital health",
+        "healthcare analytics",
+        "medical imaging",
+        "clinical trials",
+        "pharmaceutical",
+        "healthcare software",
+        "remote patient monitoring",
+        "healthcare data",
+        "medical equipment",
+        "healthcare innovation",
+        "personalized medicine",
+        "health tech"
+    ],
+    
+    "EV": [
+        "electric vehicles",
+        "EV charging",
+        "battery technology",
+        "electric cars",
+        "EV infrastructure",
+        "charging stations",
+        "electric mobility",
+        "EV adoption",
+        "lithium battery",
+        "electric vehicle market",
+        "EV sales",
+        "Tesla",
+        "electric SUV",
+        "EV range",
+        "fast charging",
+        "electric vehicle battery",
+        "EV technology",
+        "green transportation",
+        "zero emission vehicles",
+        "electric vehicle charging network"
+    ],
+    
+    "OTT": [
+        "streaming services",
+        "video on demand",
+        "OTT platform",
+        "content streaming",
+        "digital entertainment",
+        "streaming media",
+        "online video",
+        "subscription video",
+        "streaming content",
+        "OTT services",
+        "video streaming platform",
+        "digital content",
+        "streaming apps",
+        "media streaming",
+        "online entertainment",
+        "streaming technology",
+        "video platform",
+        "OTT market",
+        "streaming subscriptions",
+        "digital media"
+    ],
+    
+    "Biotech": [
+        "biotechnology",
+        "gene therapy",
+        "CRISPR",
+        "biopharmaceuticals",
+        "genetic engineering",
+        "biotech research",
+        "molecular biology",
+        "biotech innovation",
+        "precision medicine",
+        "biotech startups",
+        "drug discovery",
+        "biotech industry",
+        "genomics",
+        "proteomics",
+        "cell therapy",
+        "biotech products",
+        "biological research",
+        "biotech development",
+        "synthetic biology",
+        "biotech investment"
+    ],
+    
+    "AgriTech": [
+        "precision agriculture",
+        "smart farming",
+        "agricultural technology",
+        "farm automation",
+        "crop monitoring",
+        "agricultural drones",
+        "IoT agriculture",
+        "farm management software",
+        "agricultural sensors",
+        "agritech solutions",
+        "tea plantation management",
+        "tea garden technology",
+        "tea cultivation",
+        "tea production",
+        "tea quality monitoring",
+        "tea harvesting technology",
+        "tea processing",
+        "tea estate management",
+        "tea industry innovation",
+        "tea garden automation",
+        "sustainable tea farming",
+        "tea crop analytics",
+        "vertical farming",
+        "hydroponics",
+        "agricultural AI"
+    ],
+    
+    "Restaurant": [
+        "restaurant technology",
+        "food delivery",
+        "restaurant management",
+        "online ordering",
+        "restaurant POS",
+        "food service",
+        "restaurant software",
+        "menu management",
+        "restaurant operations",
+        "food tech",
+        "restaurant automation",
+        "kitchen management",
+        "restaurant analytics",
+        "table reservation",
+        "restaurant marketing",
+        "food ordering app",
+        "restaurant inventory",
+        "cloud kitchen",
+        "ghost kitchen",
+        "restaurant delivery",
+        "QR code menu",
+        "contactless dining",
+        "restaurant CRM",
+        "food service technology",
+        "restaurant innovation"
+    ]
+}
+
+def get_domain_keywords(domain_code: str) -> list:
+    """Get keywords for a specific domain."""
+    return DOMAIN_KEYWORDS.get(domain_code, [])
+
+def get_all_domains() -> dict:
+    """Get all domain keywords."""
+    return DOMAIN_KEYWORDS
